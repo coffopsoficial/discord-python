@@ -16,11 +16,11 @@ response = urlopen(url)
 data_json = json.loads(response.read())
 
 # DEFININDO VARIÁVEIS
-nome = data_json['USD']['name']
-data = data_json['USD']['create_date']
-valor_compra = data_json['USD']['bid']
-valor_venda = data_json['USD']['ask']
-variacao = data_json['USD']['varBid']
+nome = data_json['USDBRL']['name']
+data = data_json['USDBRL']['create_date']
+valor_compra = data_json['USDBRL']['bid']
+valor_venda = data_json['USDBRL']['ask']
+variacao = data_json['USDBRL']['varBid']
 
 # INICIANDO MONTAGEM DA MENSAGEM PARA ENVIAR PARA O DISCORD
 webhook = DiscordWebhook(url='https://discordapp.com/api/webhooks/XXXXXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
